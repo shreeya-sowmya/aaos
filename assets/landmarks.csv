@@ -1,0 +1,77 @@
+# LandmarkTestApp — South India landmark dataset
+# Format: name,lat,lon,category,details,rating,is_social
+#
+# Categories and their scoring rules in selectBestAlert():
+#   EV_STATION  → score 100 when battery < 20%
+#   SOCIAL      → score 50  when driveTime > 60 min (cloud gem path)
+#   SCENIC      → score 0   (informational only)
+#   REST_STOP   → score 0   (informational only)
+#
+# Route coverage:
+#   Bangalore city + outskirts (NICE Road, ORR, Hosur Road, Mysore Road)
+#   Chennai city + outskirts (ECR, OMR, NH-48 approach)
+#   NH-48 corridor (Bangalore ↔ Chennai via Krishnagiri / Vellore)
+#
+# ── EV Stations — Bangalore ───────────────────────────────────────────────────
+EV_Tata_Koramangala,12.9352,77.6245,EV_STATION,Tata Power EV 4x CCS2 50kW open 24h near Forum Mall,4.4,false
+EV_ChargeGrid_Whitefield,12.9698,77.7499,EV_STATION,ChargeGrid Hub 6x AC 22kW 2x DC 60kW ITPL gate,4.2,false
+EV_Ather_Indiranagar,12.9784,77.6408,EV_STATION,Ather Grid fast charge 2-wheeler and 4W bays,4.3,false
+EV_Statiq_Hebbal,13.0358,77.5970,EV_STATION,Statiq 4x DC 60kW Hebbal flyover junction 24h,4.5,false
+EV_Tata_Electronic_City,12.8450,77.6640,EV_STATION,Tata Power 8x CCS2 150kW Electronic City Phase 2,4.6,false
+EV_BESCOM_Jayanagar,12.9250,77.5938,EV_STATION,BESCOM public charger 2x AC 7kW 2x DC 30kW,3.9,false
+EV_ChargeZone_Mysore_Road,12.9400,77.5020,EV_STATION,ChargeZone 4x CCS2 60kW Mysore Road NICE junction,4.1,false
+#
+# ── EV Stations — NH-48 Corridor (Bangalore → Chennai) ───────────────────────
+EV_Statiq_Hosur,12.7367,77.8305,EV_STATION,Statiq Hosur Industrial Area 4x DC 60kW,4.3,false
+EV_Tata_Krishnagiri,12.5266,78.2138,EV_STATION,Tata Power Krishnagiri bypass 2x CCS2 100kW,4.2,false
+EV_Kazam_Vellore,12.9165,79.1325,EV_STATION,Kazam EV Vellore bypass 4x CCS2 50kW 24h,4.0,false
+EV_ChargeGrid_Ranipet,12.9352,79.3326,EV_STATION,ChargeGrid Ranipet SIPCOT 2x DC 60kW,3.9,false
+#
+# ── EV Stations — Chennai ─────────────────────────────────────────────────────
+EV_Tata_Adyar,13.0012,80.2565,EV_STATION,Tata Power Adyar 4x CCS2 50kW near LB Road,4.4,false
+EV_Ather_OMR,12.9010,80.2279,EV_STATION,Ather Grid OMR Perungudi 6x AC 22kW 2x DC 60kW,4.5,false
+EV_Statiq_Anna_Nagar,13.0850,80.2101,EV_STATION,Statiq Anna Nagar 4x DC 60kW covered parking,4.3,false
+EV_ChargeZone_Porur,13.0358,80.1573,EV_STATION,ChargeZone Porur junction 4x CCS2 60kW 24h,4.1,false
+EV_TANGEDCO_Tambaram,12.9249,80.1000,EV_STATION,TANGEDCO public fast charger Tambaram 2x DC 30kW,3.8,false
+EV_Tata_ECR,12.8270,80.2360,EV_STATION,Tata Power ECR Sholinganallur 4x CCS2 100kW,4.6,false
+#
+# ── Social / Cloud Gems — Bangalore ──────────────────────────────────────────
+Cafe_ThirdWave_Indiranagar,12.9784,77.6408,SOCIAL,Third Wave Coffee flagship single-origin cold brew fast wifi,4.7,true
+Cafe_BlueTokai_Koramangala,12.9352,77.6245,SOCIAL,Blue Tokai roastery espresso bar farm-to-cup,4.8,true
+Cafe_Matteo_MG_Road,12.9762,77.6033,SOCIAL,Matteo Coffea MG Road artisan roaster outdoor terrace,4.6,true
+Cafe_Dyu_Koramangala,12.9300,77.6220,SOCIAL,Dyu Art Cafe cozy garden seating live music weekends,4.5,true
+#
+# ── Social / Cloud Gems — NH-48 Corridor ─────────────────────────────────────
+Cafe_CCD_Krishnagiri,12.5200,78.2140,SOCIAL,Cafe Coffee Day Krishnagiri highway stop AC seating,4.2,true
+Dhaba_Arasan_Vellore,12.9100,79.1280,SOCIAL,Arasan Mess authentic Chettinad meals highway favourite,4.6,true
+#
+# ── Social / Cloud Gems — Chennai ────────────────────────────────────────────
+Cafe_Amethyst_Gopalapuram,13.0550,80.2450,SOCIAL,Amethyst heritage bungalow cafe brunch garden seating,4.8,true
+Cafe_Ciclo_OMR,12.9060,80.2310,SOCIAL,Ciclo Cafe cycling-themed OMR best cold brew on IT corridor,4.7,true
+Cafe_Tryst_ECR,12.8350,80.2400,SOCIAL,Tryst Cafe ECR beachside brunch sea breeze terrace,4.6,true
+Filter_Kapi_Mylapore,13.0350,80.2685,SOCIAL,Mylapore Filter Kaapi traditional brass tumbler davara,4.9,true
+#
+# ── Scenic Viewpoints — Bangalore ────────────────────────────────────────────
+Viewpoint_Nandi_Hills,13.3702,77.6835,SCENIC,Nandi Hills sunrise viewpoint 1478m Bangalore escape,4.8,false
+Viewpoint_Lalbagh,12.9507,77.5848,SCENIC,Lalbagh Glass House botanical garden 240 acres,4.5,false
+Viewpoint_Cubbon_Park,12.9763,77.5929,SCENIC,Cubbon Park 300 acre wooded city park heritage walk,4.4,false
+#
+# ── Scenic Viewpoints — NH-48 and Chennai ────────────────────────────────────
+Viewpoint_Krishnagiri_Dam,12.4930,78.2070,SCENIC,Krishnagiri Dam reservoir viewpoint rocky terrain,4.2,false
+Viewpoint_ECR_Beach,12.8250,80.2500,SCENIC,East Coast Road Kovalam beach sunrise pull-off,4.6,false
+Viewpoint_Marina_Chennai,13.0500,80.2824,SCENIC,Marina Beach world second longest beach promenade,4.7,false
+#
+# ── Rest Stops — Bangalore ────────────────────────────────────────────────────
+RestStop_NICE_Tumkur,13.0500,77.4900,REST_STOP,NICE Road Tumkur interchange restrooms food court 24h,4.0,false
+RestStop_Hosur_Toll,12.7800,77.8220,REST_STOP,Hosur Toll plaza rest area restrooms vending,3.7,false
+RestStop_Mysore_Road_Ramanagara,12.7147,77.2829,REST_STOP,Ramanagara rest stop restrooms fuel silk town,3.8,false
+#
+# ── Rest Stops — NH-48 Corridor ──────────────────────────────────────────────
+RestStop_Krishnagiri_Bypass,12.5300,78.2200,REST_STOP,Krishnagiri bypass NHAI rest area fuel restrooms,3.9,false
+RestStop_Ambur,12.7958,78.7173,REST_STOP,Ambur rest stop famous biryani town fuel restrooms,4.1,false
+RestStop_Vellore_Bypass,12.9200,79.1400,REST_STOP,Vellore bypass rest area 24h restrooms food stalls,3.8,false
+RestStop_Sriperumbudur,12.9683,79.9478,REST_STOP,Sriperumbudur NHAI plaza restrooms fuel 30min free,3.9,false
+#
+# ── Rest Stops — Chennai ──────────────────────────────────────────────────────
+RestStop_Tambaram_Flyover,12.9249,80.1000,REST_STOP,Tambaram flyover rest bay fuel vending 24h,3.7,false
+RestStop_OMR_Siruseri,12.8270,80.2210,REST_STOP,OMR Siruseri IT park rest area restrooms AC lounge,4.0,false

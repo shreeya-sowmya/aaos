@@ -1,0 +1,52 @@
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+android_app {
+    name: "LandmarkTestApp",
+    srcs: ["src/**/*.java"],
+    resource_dirs: ["res"],
+    asset_dirs: ["assets"],
+    manifest: "AndroidManifest.xml",
+    libs: [
+        "android.car",
+    ],
+    jni_libs: ["liblandmark_native_lib"],
+    compile_multilib: "both",
+    use_embedded_native_libs: true,
+    // Uses internal framework APIs for CarService access
+    platform_apis: true,
+    // Signed with platform keys for system-level permissions
+    certificate: "platform",
+    privileged: true,
+    optimize: {
+        enabled: false, // Keep code readable for debugging in Cuttlefish
+    },
+    static_libs: [
+        "androidx.appcompat_appcompat",
+        "androidx-constraintlayout_constraintlayout",
+    ],
+}
+
+cc_library_shared {
+    name: "liblandmark_native_lib",
+    srcs: [
+        "src/**/LandmarkLRU.cpp",
+        "src/**/LandmarkCacheJNI.cpp",
+    ],
+    local_include_dirs: ["include"],
+    shared_libs: [
+        "liblog",
+        "libnativehelper",
+        "libcurl",
+        "libcrypto",
+        "libssl",
+    ],
+    header_libs: ["jni_headers"],
+    cflags: ["-Wall", "-Werror"],
+    installable: true,
+    cppflags: [
+        "-std=c++17",
+        "-fexceptions",
+    ],
+}

@@ -1,0 +1,33 @@
+[
+  { "name": "EV_BESCOM_ElectronicCity",    "category": "EV_STATION", "detail": "BESCOM EV Hub 4x DC 60kW Electronic City Flyover",    "rating": 4.2, "isSocial": false },
+  { "name": "EV_BESCOM_Sarjapur",          "category": "EV_STATION", "detail": "BESCOM fast charger 4x CCS 50kW Sarjapur Road",       "rating": 4.1, "isSocial": false },
+  { "name": "EV_ChargeZone_Hosur",         "category": "EV_STATION", "detail": "ChargeZone 2x CCS 60kW Hosur SIPCOT",                 "rating": 4.3, "isSocial": false },
+  { "name": "EV_KSEB_Krishnagiri",         "category": "EV_STATION", "detail": "KSEB NH44 highway charger 2x CCS 50kW",               "rating": 3.9, "isSocial": false },
+  { "name": "EV_TANGEDCO_Vellore",         "category": "EV_STATION", "detail": "TANGEDCO public charger 4x AC 7.4kW Vellore CMC",     "rating": 4.0, "isSocial": false },
+  { "name": "EV_ChargePoint_Ranipet",      "category": "EV_STATION", "detail": "ChargePoint 2x CCS 150kW Ranipet SIPCOT — open 24h",  "rating": 4.5, "isSocial": false },
+  { "name": "EV_TNERC_Kanchipuram",        "category": "EV_STATION", "detail": "TNERC depot charger 6x DC 50kW Kanchipuram",          "rating": 4.4, "isSocial": false },
+  { "name": "EV_ChargeGrid_Sriperumbudur", "category": "EV_STATION", "detail": "ChargeGrid 4x CCS 100kW Sriperumbudur hub",           "rating": 4.3, "isSocial": false },
+  { "name": "EV_TANGEDCO_Maduravoyal",     "category": "EV_STATION", "detail": "TANGEDCO fast charger 8x AC 22kW Maduravoyal",        "rating": 4.2, "isSocial": false },
+  { "name": "EV_Tesla_Chennai_OMR",        "category": "EV_STATION", "detail": "Tesla Supercharger V3 12 stalls 250kW OMR — 24h",     "rating": 4.8, "isSocial": false },
+  { "name": "EV_Ather_Chennai_Anna",       "category": "EV_STATION", "detail": "Ather Grid fast charger 6x DC Anna Nagar Chennai",    "rating": 4.6, "isSocial": false },
+
+  { "name": "Cafe_Infinitea_Koramangala",  "category": "SOCIAL",     "detail": "Infinitea 50+ teas garden seating Koramangala",       "rating": 4.7, "isSocial": true  },
+  { "name": "Cafe_ThirdWave_Indiranagar",  "category": "SOCIAL",     "detail": "Third Wave Coffee single-origin espresso Indiranagar", "rating": 4.6, "isSocial": true  },
+  { "name": "Hotel_Annapoorna_Krishnagiri","category": "SOCIAL",     "detail": "Hotel Annapoorna legendary Tamil meals Krishnagiri",   "rating": 4.5, "isSocial": true  },
+  { "name": "Cafe_Murugan_Vellore",        "category": "SOCIAL",     "detail": "Murugan Idli Shop iconic soft idlis since 1952",       "rating": 4.8, "isSocial": true  },
+  { "name": "Hotel_Saravana_Kanchipuram",  "category": "SOCIAL",     "detail": "Saravana Bhavan pure veg thali Kanchipuram",           "rating": 4.6, "isSocial": true  },
+  { "name": "Cafe_Sangeetha_Chennai",      "category": "SOCIAL",     "detail": "Sangeetha Restaurant South Indian breakfast Anna Nagar","rating": 4.5, "isSocial": true  },
+
+  { "name": "Viewpoint_Krishnagiri_Dam",   "category": "SCENIC",     "detail": "Krishnagiri Reservoir panoramic dam viewpoint",        "rating": 4.4, "isSocial": false },
+  { "name": "Viewpoint_Javadhu_Hills",     "category": "SCENIC",     "detail": "Javadhu Hills tribal forest ECO reserve",              "rating": 4.6, "isSocial": false },
+  { "name": "Viewpoint_Vellore_Fort",      "category": "SCENIC",     "detail": "Vellore Fort 16th century granite fort moat museum",   "rating": 4.7, "isSocial": false },
+  { "name": "Viewpoint_Mahabalipuram",     "category": "SCENIC",     "detail": "Shore Temple UNESCO 7th century Pallava monument",     "rating": 4.8, "isSocial": false },
+  { "name": "Viewpoint_Marina_Beach",      "category": "SCENIC",     "detail": "Marina Beach world second longest 13km Chennai",       "rating": 4.7, "isSocial": false },
+
+  { "name": "RestStop_NH44_Hosur",         "category": "REST_STOP",  "detail": "NH44 Hosur wayside restrooms food court diesel",       "rating": 3.8, "isSocial": false },
+  { "name": "RestStop_NH44_Krishnagiri",   "category": "REST_STOP",  "detail": "NH44 Krishnagiri plaza AC lounge restrooms CNG",       "rating": 3.9, "isSocial": false },
+  { "name": "RestStop_NH44_Vellore",       "category": "REST_STOP",  "detail": "NH44 Vellore service plaza diesel CNG covered",        "rating": 3.7, "isSocial": false },
+  { "name": "RestStop_NH44_Ranipet",       "category": "REST_STOP",  "detail": "NH44 Ranipet rest zone food 30min free parking",       "rating": 4.0, "isSocial": false },
+  { "name": "RestStop_ECR_Mahabalipuram",  "category": "REST_STOP",  "detail": "ECR Mahabalipuram tourist rest area AC lounge",        "rating": 4.1, "isSocial": false },
+  { "name": "RestStop_ECR_Chennai",        "category": "REST_STOP",  "detail": "ECR Chennai rest area covered parking AC vending",     "rating": 4.2, "isSocial": false }
+]
